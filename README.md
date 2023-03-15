@@ -25,3 +25,19 @@ _dialogActs_ and hav ethe following files for the 4 agents in the experiment:
 2. ES2002a.B.dialog-act.xml
 3. ES2002a.C.dialog-act.xml
 4. ES2002a.D.dialog-act.xml
+
+An example of data in each file is as follows:
+
+```xml
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<nite:root nite:id="ES2002a.A.dialog-act" xmlns:nite="http://nite.sourceforge.net/">
+   <dact nite:id="ES2002a.A.dialog-act.dharshi.1">
+      <nite:pointer role="da-aspect"  href="da-types.xml#id(ami_da_4)"/>
+      <nite:child href="ES2002a.A.words.xml#id(ES2002a.A.words0)..id(ES2002a.A.words12)"/>
+   </dact>
+   <dact nite:id="ES2002a.A.dialog-act.dharshi.2">
+      <nite:pointer role="da-aspect"  href="da-types.xml#id(ami_da_4)"/>
+      <nite:child href="ES2002a.A.words.xml#id(ES2002a.A.words13)..id(ES2002a.A.words27)"/>
+   </dact>
+...
+```
