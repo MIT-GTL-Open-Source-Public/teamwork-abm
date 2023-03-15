@@ -122,4 +122,13 @@ the file _ES2002a.topic.xml_ starts out as:
 
 ### Approach
 
-Once the data folder and meeting id is provided, the code will scan the dia
+Once the data folder and meeting id is provided, the code performs the following steps to construct
+the timeline:
+
+1. scan the folder and load the ontology.
+2. list files to identify the meeting participants (also known as 
+agents in this documentation).
+3. chunk time into segments from the start time of end time of the whole meeting
+4. For each segment, identify the dominant dialog act of the participant, and fill database with this data
+5. Generate the timeline from this database in various formats
+
